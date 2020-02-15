@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+    id "org.springframework.boot" version "2.2.4.RELEASE"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.2.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.4.RELEASE'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.27'
+    testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'thymeleaf.template.App'
